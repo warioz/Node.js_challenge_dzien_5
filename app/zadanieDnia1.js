@@ -54,7 +54,7 @@ let glosuj = {
 }["glos"]();
 
 srv.get('/', (req, res) => {
-   res.send("OK");
+   res.sendFile('index.html');
 });
 
 srv.get('/vote/yes', (req, res) => {
